@@ -1,20 +1,17 @@
-var apiURL = "http://localhost:8081/login/login-employee/";
+var apiURL = "http://localhost:8081/login";
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
+var loginButton = document.getElementById("login-employee");
+let employeeId;
+let employeeName;
 
-loginEmployee = () => {
-    
-    fetch(`${apiURL} ${username} ${password}`)
-        .then(response => response.json())
-        .catch( err => console.log("Request Failed", err));
+fetch(`${apiURL} ${username} ${password}`)
+.then(response => response.json())
+.then(json => employeeData(json))
+.catch(err => console.log("Request Failed", err));
 
-}
+employeeData = (response) => {
+    employeeId = response.userId;
+    employeeName = response.firstName;
+};
 
-// loginManager = () => {
-//     let apiURL = "http://localhost:8081/login/login-manager/";
-//     let username = document.getElementById("username").value;
-//     let password = document.getElementById("password").value;
-//     fetch(`${apiURL} ${username} ${password}`)
-//         .then(response => response.json())
-//         .catch( err => console.log("Request Failed", err));
-// }

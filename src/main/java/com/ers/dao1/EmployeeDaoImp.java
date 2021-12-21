@@ -1,4 +1,4 @@
-package com.ers.dao;
+package com.ers.dao1;
 
 import java.util.List;
 
@@ -62,40 +62,29 @@ public class EmployeeDaoImp implements EmployeeDao{
 	}
 
 	//finds user by username and password
-	@SuppressWarnings({ "unused", "rawtypes" })
+	@SuppressWarnings("rawtypes")
 	@Override
 	public Employee getLoginByUsernamePassword(String username, String password) {
 		
 		Employee employee = null;
 		try(Session session = HibernateUtil.getSessionFactory().openSession()){
 			Transaction transaction = session.beginTransaction();
+			String nql = "SELECT * FROM employee where username = "+username+" AND password = "+password+";";
+			Query query = session.createNativeQuery(nql, Employee.class);
 			
-			CriteriaBuilder builder = session.getCriteriaBuilder();
-			CriteriaQuery<Employee> query = builder.createQuery(Employee.class);
-			Root<Employee> root = query.from(Employee.class);
-			query.select(root);
-			Query<Employee> q = session.createQuery(query);
-			employee = q.getSingleResult();
+			employee = (Employee) query.getSingleResult();
 			
 			transaction.commit();
 		} catch (HibernateException e) {
 			e.printStackTrace();
 		} 
 		
-		return null;
+		return employee;
 	}
 
 	@Override
 	public int addEmployee(Employee newEmp) {
-//		try(Session session = HibernateUtil.getSessionFactory().openSession()) {
-//			
-//			Transaction transaction = session.beginTransaction();
-//			transaction.commit();
-//			
-//			
-//		} catch (HibernateException e) {
-//			e.printStackTrace();
-//		} 
+
 		return 0;
 	}
 
@@ -107,20 +96,7 @@ public class EmployeeDaoImp implements EmployeeDao{
 
 	@Override
 	public List<Reimbursement> pendingList(int id) {
-		try(Session session = HibernateUtil.getSessionFactory().openSession()) {
-			List<Reimbursement> pendingList;
-			Transaction transaction = session.beginTransaction();
-			String hql = "FROM services WHERE ";
-			
-			Query query = session.createQuery(hql);
-			
-			
-			transaction.commit();
-			
-			
-		} catch (HibernateException e) {
-			e.printStackTrace();
-		} 
+		
 		return null;
 	}
 

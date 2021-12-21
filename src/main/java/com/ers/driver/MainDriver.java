@@ -8,12 +8,15 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import com.ers.controller.Controller;
 import com.ers.controller.LoginController;
+import com.ers.controller.ReimbursementController;
 
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 
 public class MainDriver {
+	private static Javalin app;
 
 	private static final String LOG_FILE = "log4j.properties";
 	
@@ -35,14 +38,15 @@ public class MainDriver {
 		logger.info("--------------");
 		
 		Javalin app = Javalin.create(ctx -> {
-			ctx.enableCorsForAllOrigins();
 			ctx.addStaticFiles("web", Location.CLASSPATH);
+			ctx.enableCorsForAllOrigins();
 		}).start(8081);
+		//http://localhost:8081/
 		
-		//login
-		app.post("/login/login-employee/", LoginController.loginEmployee);
-		app.post("/login/login-manager/", LoginController.loginManager);
+		app.post("/login", LoginController.login);
+		//app.get("/logged_in_user", loggedInUser);
 		
 	}
+	
 
 }

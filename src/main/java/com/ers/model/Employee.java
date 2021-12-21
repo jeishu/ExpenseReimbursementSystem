@@ -23,16 +23,16 @@ public class Employee {
 	@Column(name = "last_name")
 	private String lastName;
 	
-	@Column(name = "password")
+	@Column(name = "emp_password")
 	private String password;
 	
 	@Column(name = "username")
-	private String userName;
+	private String username;
 	
 	public Employee() {}
 	
 	public Employee(int userId, String userRole, String email, String firstName, String lastName, String password,
-			String userName) {
+			String username) {
 		super();
 		this.userId = userId;
 		this.userRole = userRole;
@@ -40,7 +40,7 @@ public class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.password = password;
-		this.userName = userName;
+		this.username = username;
 	}
 
 	public int getUserId() {
@@ -91,18 +91,18 @@ public class Employee {
 		this.password = password;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [userId=" + userId + ", userRole=" + userRole + ", email=" + email + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", password=" + password + ", userName=" + userName + "]";
+				+ ", lastName=" + lastName + ", password=" + password + ", username=" + username + "]";
 	}
 	
 }
