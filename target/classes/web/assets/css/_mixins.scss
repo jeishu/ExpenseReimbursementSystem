@@ -1,0 +1,33 @@
+
+//display flex, flex direction column, justify content center, align items center
+@mixin display-fccc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display-frcc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center-to-page {
+    @include display-fccc;
+    height: 100vh;
+    margin: 0;
+}
+@mixin neuromorphism-buttons {
+    background: #fcfcfc;
+    box-shadow:  6px 6px 27px #e5e5e5,
+     -6px -6px 27px #ffffff;
+    &:active {
+        box-shadow: inset 6px 6px 27px #e5e5e5,
+        inset -6px -6px 27px #ffffff;   
+    }
+}
+@mixin neuromorphism {
+    background: #fcfcfc;
+    box-shadow:  6px 6px 27px #e5e5e5,
+     -6px -6px 27px #ffffff;
+}

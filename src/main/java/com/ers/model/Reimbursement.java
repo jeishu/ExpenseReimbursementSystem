@@ -10,22 +10,31 @@ public class Reimbursement {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "reimbursement_id")
 	private int reimbursementId;
+	
 	@Column(name = "accepted")
 	private boolean accepted;
+	
 	@Column(name = "amount")
 	private float amount;
+	
 	@Column(name = "description")
 	private String description;
+	
 	@Column(name = "reimbursement_type")
 	private String reimbursementType;
+	
 	@Column(name = "resolve_time")
 	private String resolveTime;
+	
 	@Column(name = "resolved")
 	private boolean resolved;
+	
 	@Column(name = "submit_time")
 	private String submitTime;
+	
 	@Column(name = "author_id")
 	private int authorId;
+	
 	@Column(name = "resolved_id")
 	private int resolvedId;
 	

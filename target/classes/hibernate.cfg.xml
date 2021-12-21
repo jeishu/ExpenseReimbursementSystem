@@ -16,9 +16,12 @@
 	 
 		<!-- show all generate SQL query -->
 		<property name="show_sql">true</property>
-	 
-		<!-- Drop the existing tables and create new one --> 
-		<property name="hbm2ddl.auto">create-drop</property>
+
+	    <!-- Set the current session context -->
+        <property name="current_session_context_class">thread</property>
+
+		<!-- Updating existing tables --> 
+		<property name="hbm2ddl.auto">update</property>
 	 
 		<!-- Mention here all the model classes along with their package name --> 
 		<mapping class="com.ers.model.Employee"/>		
