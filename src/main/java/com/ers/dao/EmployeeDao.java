@@ -14,7 +14,7 @@ public interface EmployeeDao {
 	List<Employee> getAllEmployee(int id);
 	
 	//finds user by username and password
-	boolean getLoginByUsernamePassword(String username, String password);
+	Employee getLoginByUsernamePassword(String username, String password);
 	
 	//add new user to the database
 	int addEmployee(Employee newEmp);

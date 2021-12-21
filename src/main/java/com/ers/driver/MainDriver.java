@@ -40,11 +40,9 @@ public class MainDriver {
 		}).start(8081);
 		
 		//login
-		app.get("/login/login-employee", LoginController.loginEmployee);
-		app.get("/login/login-manager", LoginController.loginManager);
+		app.post("/login/login-employee/", LoginController.loginEmployee);
+		app.post("/login/login-manager/", LoginController.loginManager);
 		
-		//app.get("/", EmployeeController.);
-		//app.get("/login", EmployeeController.getLogin);
 	}
 
 }
