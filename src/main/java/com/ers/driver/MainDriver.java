@@ -8,7 +8,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import com.ers.controller.Controller;
+import com.ers.controller.EmployeeController;
 import com.ers.controller.LoginController;
 import com.ers.controller.ReimbursementController;
 
@@ -44,6 +44,7 @@ public class MainDriver {
 		//http://localhost:8081/
 		
 		app.post("/login", LoginController.login);
+		app.get("/employee", EmployeeController.getAllEmployee);
 		//app.get("/logged_in_user", loggedInUser);
 		
 	}

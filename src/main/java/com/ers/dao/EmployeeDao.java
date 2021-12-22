@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -20,6 +22,20 @@ public class EmployeeDao {
 	
 	public void setConnection(Connection connection) {
 		this.connection = connection;
+	}
+	
+	public Employee allEmployee(ResultSet rs) throws SQLException {
+		Employee employee = new Employee();
+		
+		employee.setUserId(rs.getInt("user_id"));
+		employee.setUserRole(rs.getString("user_role"));
+		employee.setEmail(rs.getString("email"));
+		employee.setFirstName(rs.getString("first_name"));
+		employee.setLastName(rs.getString("last_name"));
+		employee.setPassword(rs.getString("emp_password"));
+		employee.setUserName(rs.getString("username"));
+		
+		return employee;
 	}
 	
 	public Employee getEmployeeByUsernameAndPassword(String username, String password) {
@@ -57,6 +73,30 @@ public class EmployeeDao {
 		}
 		return employee;
 	}
+	
+	public Set<Employee> getAllEmployee() {
+		
+		try(Connection connection = ConnectionUtils.getConnection()){
+			String sql = "SELECT * FROM employee";
+			
+			PreparedStatement ps = connection.prepareStatement(sql);
+			System.out.println(ps);
+			
+			Set<Employee> employeeList = new HashSet<Employee>();
+			
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				Employee employee = allEmployee(rs);
+				
+				employeeList.add(employee);
+			}
+			return employeeList;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
 //	public static void main(String[] args) {
 //		EmployeeDao employee = new EmployeeDao();
 //		employee.getEmployeeByUsernameAndPassword("johndoe","password").toString();

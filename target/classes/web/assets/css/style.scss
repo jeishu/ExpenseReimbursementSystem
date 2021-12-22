@@ -165,6 +165,7 @@ li {
     }
     main.service-dashboard {
         @include display-fccc;
+        justify-content: flex-start;
         width: 70%;
         height: 100%;
         margin: 0 auto;
@@ -172,8 +173,27 @@ li {
         p.service-header {
             padding: 1rem 0;
             border-bottom: .1px rgba(225, 225, 225, 0.837) solid;
-            width: 70%;
+            width: 90%;
             text-align: center;
+        }
+    }
+}
+//getAllEmployee.html
+div.table-container {
+    @include display-fccc;
+
+    table#employee-table {
+        border-spacing: .5rem;
+        tbody tr {
+            text-align: center;
+            th {
+                font-size: .8rem;
+                padding: .5rem;
+            } 
+        }
+        tr td {
+            text-align: center;
+            font-size: .7rem;
         }
     }
 }

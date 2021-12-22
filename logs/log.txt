@@ -14383,3 +14383,23 @@ java.lang.Exception: exception just for purpose of providing stack trace
 2021-12-21 16:15:43 ERROR MainDriver:36 - LOG: ERROR
 2021-12-21 16:15:43 FATAL MainDriver:37 - LOG: Fatal
 2021-12-21 16:15:43 INFO  MainDriver:38 - --------------
+2021-12-21 16:18:04 WARN  MainDriver:35 - LOG: Warning
+2021-12-21 16:18:04 ERROR MainDriver:36 - LOG: ERROR
+2021-12-21 16:18:04 FATAL MainDriver:37 - LOG: Fatal
+2021-12-21 16:18:04 INFO  MainDriver:38 - --------------
+2021-12-21 21:37:50 WARN  MainDriver:35 - LOG: Warning
+2021-12-21 21:37:50 ERROR MainDriver:36 - LOG: ERROR
+2021-12-21 21:37:50 FATAL MainDriver:37 - LOG: Fatal
+2021-12-21 21:37:50 INFO  MainDriver:38 - --------------
+2021-12-21 21:40:56 WARN  MainDriver:34 - LOG: Warning
+2021-12-21 21:40:56 ERROR MainDriver:35 - LOG: ERROR
+2021-12-21 21:40:56 FATAL MainDriver:36 - LOG: Fatal
+2021-12-21 21:40:56 INFO  MainDriver:37 - --------------
+2021-12-21 22:13:30 WARN  MainDriver:34 - LOG: Warning
+2021-12-21 22:13:30 ERROR MainDriver:35 - LOG: ERROR
+2021-12-21 22:13:30 FATAL MainDriver:36 - LOG: Fatal
+2021-12-21 22:13:30 INFO  MainDriver:37 - --------------
+2021-12-21 22:15:26 WARN  MainDriver:35 - LOG: Warning
+2021-12-21 22:15:26 ERROR MainDriver:36 - LOG: ERROR
+2021-12-21 22:15:26 FATAL MainDriver:37 - LOG: Fatal
+2021-12-21 22:15:26 INFO  MainDriver:38 - --------------
