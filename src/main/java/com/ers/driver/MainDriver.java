@@ -44,7 +44,14 @@ public class MainDriver {
 		//http://localhost:8081/
 		
 		app.post("/login", LoginController.login);
+		app.get("/login", ctx -> ctx.json(ctx.cookieStore("employee")));
+		
 		app.get("/employee", EmployeeController.getAllEmployee);
+		//app.get("/employee", EmployeeController.viewEmployeeProfile);
+		
+		//app.post("/submit", ReimbursementController.submitNewReimbursement);
+		//app.post("/employee", EmployeeController.addEmployee); get back to this
+		app.get("/reimbursement", ReimbursementController.getAllReimbursement); //get back to this
 		//app.get("/logged_in_user", loggedInUser);
 		
 	}

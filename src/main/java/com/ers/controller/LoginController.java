@@ -10,16 +10,18 @@ public class LoginController {
 	
 	public static Handler login = ctx -> {
 		EmployeeDao employeeDao = new EmployeeDao();
+		
 		String username = ctx.formParam("username");
 		System.out.println(username);
 		String password = ctx.formParam("password");
 		System.out.println(password);
-
+				
 		if(employeeDao.getEmployeeByUsernameAndPassword(username, password) != null) {
 			employee = employeeDao.getEmployeeByUsernameAndPassword(username, password);
 			System.out.println("Logged in");
-//			ctx.cookieStore("User", employee);
-//			ctx.cookieStore("User Role", employee.getUserRole());
+			ctx.cookieStore("user", employee);
+			ctx.cookieStore("userRole", employee.getUserRole());
+			ctx.cookieStore("userId", employee.getUserId());
 		}
 		if(employee.getUserRole().equals("employee")) {
 			ctx.redirect("../../html/employee/employeeHome.html");
@@ -29,5 +31,4 @@ public class LoginController {
 		}
 		ctx.json(employee);
 	};
-	
 }

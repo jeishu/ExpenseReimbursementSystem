@@ -38,6 +38,7 @@ public class EmployeeDao {
 		return employee;
 	}
 	
+	//getting login info
 	public Employee getEmployeeByUsernameAndPassword(String username, String password) {
 		
 		Employee employee = new Employee();
@@ -74,10 +75,11 @@ public class EmployeeDao {
 		return employee;
 	}
 	
+	//Getting all Employees
 	public Set<Employee> getAllEmployee() {
 		
 		try(Connection connection = ConnectionUtils.getConnection()){
-			String sql = "SELECT * FROM employee";
+			String sql = "SELECT * FROM employee ORDER BY user_id ASC";
 			
 			PreparedStatement ps = connection.prepareStatement(sql);
 			System.out.println(ps);
@@ -95,6 +97,30 @@ public class EmployeeDao {
 			e.printStackTrace();
 		}
 		return null;
+	}
+	
+	public boolean addEmployee(Employee employee) {
+		try(Connection connection = ConnectionUtils.getConnection()){
+			String sql = "INSERT INTO employee WHERE VALUES(?,?,?,?,?,?,?)";
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ps.setInt(1, employee.getUserId());
+			ps.setString(2, employee.getUserRole());
+			ps.setString(3, employee.getEmail());
+			ps.setString(4, employee.getFirstName());
+			ps.setString(5, employee.getLastName());
+			ps.setString(6, employee.getPassword());
+			ps.setString(7, employee.getUsername());
+			
+			int update = ps.executeUpdate();
+			if(update == 1) {
+				return true;
+			}
+			
+			System.out.println(ps);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 	
 //	public static void main(String[] args) {

@@ -186,14 +186,75 @@ div.table-container {
         border-spacing: .5rem;
         tbody tr {
             text-align: center;
+            text-transform: uppercase;
             th {
                 font-size: .8rem;
                 padding: .5rem;
+                text-transform: uppercase;
+
             } 
         }
         tr td {
             text-align: center;
             font-size: .7rem;
+            text-transform: uppercase;
+
         }
     }
 }
+//managerHome.html
+p.reim-header {
+    margin: 1rem;
+    padding: .5rem 0;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: .25rem;
+    text-align: center;
+}
+table.reim-tables {
+    border-spacing: .5rem;
+    width: 100%;
+    
+        tbody tr {
+            text-align: center;
+            text-transform: uppercase;
+
+            th {
+                font-size: .8rem;
+                padding: .5rem;
+                text-transform: uppercase;
+
+            } 
+        }
+        tr td {
+            text-align: center;
+            font-size: .7rem;
+            text-transform: uppercase;
+
+        }
+}
+
+//employeeSubmit.html
+p.new-ticket {
+    padding: 1rem;
+}
+#submit-ticket-form {
+    @include display-fccc;
+    label, p {
+        text-align: left;
+        width: 100%;
+    }
+    input, textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #submit-ticket {
+        margin: 1rem;
+        padding: .3rem;
+    }
+}
+

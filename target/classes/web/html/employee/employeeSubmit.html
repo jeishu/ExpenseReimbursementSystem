@@ -25,10 +25,27 @@
             <div class="vertical-line"></div>
             <main class="service-dashboard">
                 <p class="service-header">SERVICE DASHBOARD</p>
+                <p class="new-ticket">Submit a new ticket</p>
+                <form id="submit-ticket-form" action="/submit" method="POST">
+                    <!-- <label for="author_id" name="author_id">User ID</label>
+                    <input id="author_id" name="author_id" type="text"/> -->
+                    <p>Type of Ticket</p>
+                    <select name="reim-type" id="reim-type">
+                        <option class="options" value=""></option>
+                        <option class="options" value="food">Food</option>
+                        <option class="options" value="travel">Travel</option>
+                        <option class="options" value="utility">Utility</option>
+                    </select>
+                    <label for="description" name="description">Description of Expenses</label>
+                    <textarea type="text" name="description" id="description"></textarea>
+                    <label for="amount" name="amount">Amount</label>
+                    <input type="number" name="amount" id="amount">
+                    <input type="submit" id="submit-ticket">
+                </form>
             </main>
         </div>
     </div>
     
-    <script src=""></script>
+    <script src="../../assets/js/submitTicket.js"></script>
 </body>
 </html>

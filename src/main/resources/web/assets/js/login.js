@@ -5,12 +5,13 @@ var loginButton = document.getElementById("login-employee");
 let employeeId;
 let employeeName;
 
-fetch(`${apiURL} ${username} ${password}`)
+fetch(apiURL)
 .then(response => response.json())
 .then(json => employeeData(json))
 .catch(err => console.log("Request Failed", err));
-
 employeeData = (response) => {
+    console.log(response)
+
     employeeId = response.userId;
     employeeName = response.firstName;
 };

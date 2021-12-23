@@ -14403,3 +14403,91 @@ java.lang.Exception: exception just for purpose of providing stack trace
 2021-12-21 22:15:26 ERROR MainDriver:36 - LOG: ERROR
 2021-12-21 22:15:26 FATAL MainDriver:37 - LOG: Fatal
 2021-12-21 22:15:26 INFO  MainDriver:38 - --------------
+2021-12-21 22:32:00 WARN  MainDriver:35 - LOG: Warning
+2021-12-21 22:32:00 ERROR MainDriver:36 - LOG: ERROR
+2021-12-21 22:32:00 FATAL MainDriver:37 - LOG: Fatal
+2021-12-21 22:32:00 INFO  MainDriver:38 - --------------
+2021-12-22 00:24:52 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 00:24:52 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 00:24:52 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 00:24:52 INFO  MainDriver:38 - --------------
+2021-12-22 00:36:18 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 00:36:18 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 00:36:18 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 00:36:18 INFO  MainDriver:38 - --------------
+2021-12-22 01:03:04 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 01:03:04 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 01:03:04 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 01:03:04 INFO  MainDriver:38 - --------------
+2021-12-22 01:05:21 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 01:05:21 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 01:05:21 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 01:05:21 INFO  MainDriver:38 - --------------
+2021-12-22 01:06:20 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 01:06:20 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 01:06:20 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 01:06:20 INFO  MainDriver:38 - --------------
+2021-12-22 13:45:44 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 13:45:44 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 13:45:44 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 13:45:44 INFO  MainDriver:38 - --------------
+2021-12-22 13:59:34 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 13:59:34 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 13:59:34 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 13:59:34 INFO  MainDriver:38 - --------------
+2021-12-22 14:20:00 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 14:20:00 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 14:20:00 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 14:20:00 INFO  MainDriver:38 - --------------
+2021-12-22 14:22:08 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 14:22:08 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 14:22:08 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 14:22:08 INFO  MainDriver:38 - --------------
+2021-12-22 16:13:16 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 16:13:16 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 16:13:16 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 16:13:16 INFO  MainDriver:38 - --------------
+2021-12-22 16:31:00 WARN  MainDriver:35 - LOG: Warning
+2021-12-22 16:31:00 ERROR MainDriver:36 - LOG: ERROR
+2021-12-22 16:31:00 FATAL MainDriver:37 - LOG: Fatal
+2021-12-22 16:31:00 INFO  MainDriver:38 - --------------
+2021-12-23 00:25:58 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 00:25:58 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 00:25:58 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 00:25:58 INFO  MainDriver:38 - --------------
+2021-12-23 00:26:12 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 00:26:12 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 00:26:12 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 00:26:12 INFO  MainDriver:38 - --------------
+2021-12-23 00:36:50 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 00:36:50 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 00:36:50 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 00:36:50 INFO  MainDriver:38 - --------------
+2021-12-23 00:40:39 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 00:40:39 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 00:40:39 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 00:40:39 INFO  MainDriver:38 - --------------
+2021-12-23 00:47:34 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 00:47:34 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 00:47:34 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 00:47:34 INFO  MainDriver:38 - --------------
+2021-12-23 01:06:38 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 01:06:38 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 01:06:38 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 01:06:38 INFO  MainDriver:38 - --------------
+2021-12-23 01:07:01 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 01:07:01 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 01:07:01 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 01:07:01 INFO  MainDriver:38 - --------------
+2021-12-23 01:12:32 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 01:12:32 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 01:12:32 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 01:12:32 INFO  MainDriver:38 - --------------
+2021-12-23 01:13:24 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 01:13:24 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 01:13:24 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 01:13:24 INFO  MainDriver:38 - --------------
+2021-12-23 01:13:30 WARN  MainDriver:35 - LOG: Warning
+2021-12-23 01:13:30 ERROR MainDriver:36 - LOG: ERROR
+2021-12-23 01:13:30 FATAL MainDriver:37 - LOG: Fatal
+2021-12-23 01:13:30 INFO  MainDriver:38 - --------------

@@ -14,8 +14,8 @@
             <nav class="nav-bar">
                 <p class="nav-header">MENU</p>
                 <ul class="service-nav">
+                    <li><a href="./managerAllTickets.html">View all tickets</a></li>
                     <li><a href="./managerPending.html">View all pending request</a></li>
-                    <li><a href="./managerResolved.html">View all resolved request</a></li>
                     <li><a href="./managerViewAllEmp.html">View all employees</a></li>
                     <li><a href="./managerViewReimByEmp.html">View request by employee</a></li>                    
                     <li><a href="../../index.html">Logout</a></li>
@@ -23,11 +23,30 @@
             </nav>
             <div class="vertical-line"></div>
             <main class="service-dashboard">
-                <p class="service-header">SERVICE DASHBOARD</p>
+                <p class="service-header">MANAGER DASHBOARD</p>
+                <div class="table-container">
+                    <p class="reim-header">RESOLVED TICKETS</p>
+                    <table id="resolved-table" class="reim-tables">
+                        <tbody>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Accepted</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                                <th>Type</th>
+                                <th>Resolved Time</th>
+                                <th>Resolved</th>
+                                <th>Submit Time</th>
+                                <th>Author</th>
+                                <th>Resolved ID</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </main>
         </div>
     </div>
     
-    <script src=""></script>
+    <script src="../../assets/js/getAllReim.js"></script>
 </body>
 </html>
