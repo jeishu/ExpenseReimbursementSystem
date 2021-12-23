@@ -14,12 +14,12 @@
             <h1>Employee Login</h1>
             <br>
             <div class="input-container">
-                <form action="/login" method="POST">
+                <form action="/login/login" method="post">
                     <label for="username">Username:</label>
-                    <input id="username" type="text" name="username" placeholder="Enter your username"/>
+                    <input id="username" type="text" name="username" placeholder="Enter your username" required/>
                     <br>
                     <label for="password">Password:</label>
-                    <input id="password" type="password" name="password" placeholder="Enter your password">
+                    <input id="password" type="password" name="password" placeholder="Enter your password" required/>
                     <br>
                     <input id="login-employee" type="submit" value="Submit">
                 </form>
@@ -27,6 +27,6 @@
             <a class="back-button" href="../index.html">BACK</a>
         </div>
     </div>
-    <script src="../assets/js/login.js"></script>
+    <!-- <script src="../assets/js/login.js"></script> -->
 </body>
 </html>

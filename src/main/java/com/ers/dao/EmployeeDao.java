@@ -14,6 +14,7 @@ import com.ers.util.ConnectionUtils;
 
 public class EmployeeDao {
 	Logger logger = Logger.getLogger(EmployeeDao.class);
+	
 	private Connection connection;
 	
 	public EmployeeDao() {
@@ -52,7 +53,7 @@ public class EmployeeDao {
 			ps.setString(2, password);
 			
 			
-			System.out.println(ps);
+			System.out.println("getEMployeeByUsernameAndPassword: "+ ps);
 			
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()) {

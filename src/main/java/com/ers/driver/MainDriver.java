@@ -16,7 +16,6 @@ import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 
 public class MainDriver {
-	private static Javalin app;
 
 	private static final String LOG_FILE = "log4j.properties";
 	
@@ -38,20 +37,23 @@ public class MainDriver {
 		logger.info("--------------");
 		
 		Javalin app = Javalin.create(ctx -> {
+			logger.info("Start: http://localhost:8081/");
 			ctx.addStaticFiles("web", Location.CLASSPATH);
 			ctx.enableCorsForAllOrigins();
 		}).start(8081);
 		//http://localhost:8081/
 		
-		app.post("/login", LoginController.login);
-		app.get("/login", ctx -> ctx.json(ctx.cookieStore("employee")));
+		app.post("/login/login", LoginController.login);
+		app.get("/login/login", ctx -> {
+			ctx.json(ctx.cookieStore("user"));
+		});
 		
 		app.get("/employee", EmployeeController.getAllEmployee);
 		//app.get("/employee", EmployeeController.viewEmployeeProfile);
 		
 		//app.post("/submit", ReimbursementController.submitNewReimbursement);
 		//app.post("/employee", EmployeeController.addEmployee); get back to this
-		app.get("/reimbursement", ReimbursementController.getAllReimbursement); //get back to this
+		app.get("/reimbursement", ReimbursementController.getAllReimbursement);
 		//app.get("/logged_in_user", loggedInUser);
 		
 	}

@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
+import org.apache.log4j.Logger;
+
 import com.ers.dao.ReimbursementDao;
 import com.ers.model.Reimbursement;
 
@@ -13,8 +15,11 @@ import io.javalin.http.Handler;
 
 public class ReimbursementController  {
 	
+	private static final Logger logger = Logger.getLogger(ReimbursementController.class);
+	
 	//get all the reimbursement tickets and returns to the client side
 	public static Handler getAllReimbursement = ctx -> {
+		logger.info("Handler getAllReimbursement is initialized.");
 		ReimbursementDao reimbursementDao = new ReimbursementDao();
 		
 		ctx.json(reimbursementDao.getAllReimbursement());

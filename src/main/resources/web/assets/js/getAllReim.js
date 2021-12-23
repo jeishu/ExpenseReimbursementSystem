@@ -21,7 +21,6 @@ fetch(apiURL)
 //Getting all Reimbursement Tickets
 displayTable = (response) => {
     let reimTable = document.getElementById("reim-table");
-    let pendingInfo = document.getElementById("pending-info");
     response.forEach( row => {
         const tr = document.createElement("tr");
         for(const block in row){
