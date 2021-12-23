@@ -29,13 +29,13 @@ employeeDataTable = (response) => {
     employeeId = response.userId;
     employeeName = response.firstName;
 
-    console.log(employeeId)
-    console.log(employeeName)
-    console.log(response.authorId)
+    // console.log(employeeId)
+    // console.log(employeeName)
+    // console.log(response.authorId)
     
 };
 
-
+//getting pending reimbursement based on employee info
 pendingByEmployee = (response) => {
     let employeePending = document.getElementById("emp-pending-table");
 
@@ -52,6 +52,7 @@ pendingByEmployee = (response) => {
     })
 }
 
+//getting resolved reimbursement based on employee info
 resolvedByEmployee = (response) => {
     let employeeResolve = document.getElementById("emp-resolved-table");
 

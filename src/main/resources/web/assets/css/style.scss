@@ -258,3 +258,22 @@ p.new-ticket {
     }
 }
 
+//employeeViewProfile.html
+#profile {
+    @include display-fccc;
+    width: 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+    p {
+        margin: .5rem;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+
+        span {
+            text-align: right;
+            font-weight: lighter;
+        }
+    }
+}

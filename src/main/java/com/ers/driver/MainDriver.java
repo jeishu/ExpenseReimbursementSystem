@@ -49,7 +49,7 @@ public class MainDriver {
 		});
 		
 		app.get("/employee", EmployeeController.getAllEmployee);
-		//app.get("/employee", EmployeeController.viewEmployeeProfile);
+		//app.get("/profile", EmployeeController.viewEmployeeProfile);
 		
 		//app.post("/submit", ReimbursementController.submitNewReimbursement);
 		//app.post("/employee", EmployeeController.addEmployee); get back to this
