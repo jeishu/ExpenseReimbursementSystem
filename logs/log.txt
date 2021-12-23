@@ -7629,3 +7629,18 @@ RETURNING *]
 2021-12-23 08:48:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
 2021-12-23 08:48:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
 2021-12-23 08:48:03 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:50:40 WARN  MainDriver:34 - LOG: Warning
+2021-12-23 08:50:40 ERROR MainDriver:35 - LOG: ERROR
+2021-12-23 08:50:40 FATAL MainDriver:36 - LOG: Fatal
+2021-12-23 08:50:40 INFO  MainDriver:37 - --------------
+2021-12-23 08:50:40 INFO  MainDriver:40 - Start: http://localhost:8081/
+2021-12-23 08:50:50 INFO  LoginController:17 - Handler login is initialized.
+2021-12-23 08:50:52 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:50:53 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:50:53 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:50:54 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:50:59 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:50:59 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:51:00 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:51:00 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:51:04 INFO  ReimbursementController:61 - New reimbursement ticket waiting for approval.
