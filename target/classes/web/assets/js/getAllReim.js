@@ -18,6 +18,12 @@ fetch(apiURL)
 .then(json => resolvedTable(json))
 .catch(err => console.log("Request Failed", err));
 
+//Approval of Reimbursement Tickets
+fetch(apiURL)
+.then(response => response.json())
+.then(json => approvalTable(json))
+.catch(err => console.log("Request Failed", err));
+
 //Getting all Reimbursement Tickets
 displayTable = (response) => {
     let reimTable = document.getElementById("reim-table");
@@ -66,3 +72,16 @@ resolvedTable = (response) => {
     })
 };
 
+//Approval of Reimbursement Tickets
+approvalTable = (response) => {
+    //let approvalTable = document.getElementById("approval-form");
+    let approvalOptions = document.getElementById("reimId");
+    response.forEach( row => {
+        let option = document.createElement("option");
+        if(row.resolved === false){
+           option.value = row.reimbursementId;
+           option.text = row.reimbursementId;
+           approvalOptions.appendChild(option);
+        }
+    })
+};

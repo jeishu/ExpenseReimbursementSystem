@@ -7,8 +7,10 @@ import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.Set;
 
+
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.ers.model.Reimbursement;
 import com.ers.util.ConnectionUtils;
@@ -80,6 +82,28 @@ public class ReimbursementDao {
 			reimbursement.setAuthorId(reimbursement.getAuthorId());
 			session.save(reimbursement);
 			session.getTransaction().commit();
+		}
+		return true;
+	}
+	
+	//updating reimbursements for managers
+	public boolean updateReimbursements(Reimbursement reimbursement) {
+		logger.info("Updating reimbursements for approval.");
+		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+			Transaction transaction = session.beginTransaction();
+			
+			Reimbursement updatedReimbursement = session.load(Reimbursement.class, reimbursement.getReimbursementId());
+			updatedReimbursement.setAccepted(reimbursement.isAccepted());
+			updatedReimbursement.getResolveTime();
+			updatedReimbursement.setResolved(true);
+			updatedReimbursement.setResolvedId(reimbursement.getReimbursementId());
+			
+			session.update(updatedReimbursement);
+			
+			transaction.commit();
+			session.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return true;
 	}

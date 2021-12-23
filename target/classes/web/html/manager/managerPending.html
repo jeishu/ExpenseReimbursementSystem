@@ -15,6 +15,7 @@
                 <p class="nav-header">MENU</p>
                 <ul class="service-nav">
                     <li><a href="./managerAllTickets.html">View all tickets</a></li>
+                    <li><a href="./managerPending.html">View all pending request</a></li>
                     <li><a href="./managerResolved.html">View all resolved request</a></li>
                     <li><a href="./managerViewAllEmp.html">View all employees</a></li>
                     <li><a href="./managerViewReimByEmp.html">View request by employee</a></li>                    
@@ -42,6 +43,17 @@
                             </tr>
                         </tbody>
                     </table>
+                    <form id="approval-form" action="/approval" method="post">
+                        <select name="reimId" id="reimId">
+
+                        </select>
+                        <select name="reim-options" id="reim-options">
+                            <option value=""></option>
+                            <option value="true">APPROVE</option>
+                            <option value="false">DENY</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </main>
         </div>

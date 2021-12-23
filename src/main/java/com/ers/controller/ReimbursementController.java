@@ -42,11 +42,7 @@ public class ReimbursementController  {
 		String description = ctx.formParam("description");
 		int amount = Integer.parseInt(ctx.formParam("amount"));
 		
-		Random random = new Random();
-		Integer randomId = random.nextInt(999);
-		System.out.println(randomId);
-		
-//		reimbursement.setReimbursementId(randomId);
+//		reimbursement.setReimbursementId(randomId); //this was serialized in DB so we dont need to generate a random value
 		reimbursement.setAccepted(false);
 		reimbursement.setAmount(amount);
 		reimbursement.setDescription(description);
@@ -58,11 +54,34 @@ public class ReimbursementController  {
 		
 		reimbursementDao.submitReimbursements(reimbursement);
 		ctx.redirect("../../html/employee/employeeHome.html");
-		
 	};
-//	public static void main(String[] args) {
-//		Random random = new Random();
-//		int randomId = random.nextInt(999);
-//		System.out.println(randomId);
-//	}
+	
+	//Approval for new tickets
+	public static Handler reimbursementApproval = ctx -> {
+		logger.info("New reimbursement ticket waiting for approval.");
+
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+		Date date = new Date();
+		int id = ctx.cookieStore("userId");
+		Reimbursement reimbursement = new Reimbursement();
+		ReimbursementDao reimbursementDao = new ReimbursementDao();
+		String reimbursementId = ctx.formParam("reimId");
+		String resolvedTime = dateFormat.format(date);
+		String reimbursementOption = ctx.formParam("reim-option");
+		boolean accepted;
+		if (reimbursementOption.equals("true")) {
+			accepted = true;
+			logger.info("Reimbursement approved");
+		} else {
+			logger.info("Reimbursement denied");
+			accepted = false;
+		}
+		reimbursement.setResolvedId(id);
+		reimbursement.setReimbursementId(Integer.parseInt(reimbursementId));
+		reimbursement.setResolveTime(resolvedTime);
+		reimbursement.setAccepted(accepted);
+		reimbursementDao.updateReimbursements(reimbursement);
+		
+		ctx.redirect("/managerResolved.html");
+	};
 }

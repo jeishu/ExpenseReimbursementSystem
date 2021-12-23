@@ -7476,3 +7476,156 @@ RETURNING *]
 2021-12-23 08:13:07 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
 2021-12-23 08:13:17 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
 2021-12-23 08:13:17 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:15:14 WARN  MainDriver:34 - LOG: Warning
+2021-12-23 08:15:14 ERROR MainDriver:35 - LOG: ERROR
+2021-12-23 08:15:14 FATAL MainDriver:36 - LOG: Fatal
+2021-12-23 08:15:14 INFO  MainDriver:37 - --------------
+2021-12-23 08:15:14 INFO  MainDriver:40 - Start: http://localhost:8081/
+2021-12-23 08:15:20 INFO  LoginController:17 - Handler login is initialized.
+2021-12-23 08:15:21 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:15:22 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:15:22 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:15:31 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:15:32 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:15:32 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:39 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:40 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:41 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:41 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:41 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:43 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:43 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:44 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:45 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:45 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:46 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:48 INFO  EmployeeController:19 - Handler getAllEmployee is initialized
+2021-12-23 08:16:52 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:52 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:16:53 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:17:18 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:17:18 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:17:19 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:17:19 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:17:20 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:17:20 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:31:13 WARN  MainDriver:34 - LOG: Warning
+2021-12-23 08:31:13 ERROR MainDriver:35 - LOG: ERROR
+2021-12-23 08:31:13 FATAL MainDriver:36 - LOG: Fatal
+2021-12-23 08:31:13 INFO  MainDriver:37 - --------------
+2021-12-23 08:31:14 INFO  MainDriver:40 - Start: http://localhost:8081/
+2021-12-23 08:31:22 INFO  LoginController:17 - Handler login is initialized.
+2021-12-23 08:31:24 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:31:25 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:31:25 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:31:28 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:31:28 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:31:29 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:10 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:10 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:11 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:11 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:23 INFO  LoginController:17 - Handler login is initialized.
+2021-12-23 08:37:25 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:25 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:26 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:26 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:29 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:30 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:30 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:37:30 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:00 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:01 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:01 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:23 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:23 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:24 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:24 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:26 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:26 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:26 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:27 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:35 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:36 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:36 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:37 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:41 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:42 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:43 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:43 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:46 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:47 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:47 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:48 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:49 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:49 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:50 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:38:50 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:21 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:22 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:22 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:23 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:26 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:27 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:27 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:28 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:29 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:29 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:30 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:30 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:45 WARN  MainDriver:34 - LOG: Warning
+2021-12-23 08:39:45 ERROR MainDriver:35 - LOG: ERROR
+2021-12-23 08:39:45 FATAL MainDriver:36 - LOG: Fatal
+2021-12-23 08:39:45 INFO  MainDriver:37 - --------------
+2021-12-23 08:39:45 INFO  MainDriver:40 - Start: http://localhost:8081/
+2021-12-23 08:39:54 INFO  LoginController:17 - Handler login is initialized.
+2021-12-23 08:39:56 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:57 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:57 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:39:58 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:03 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:03 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:04 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:04 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:05 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:40:05 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:11 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:12 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:12 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:13 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:31 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:31 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:32 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:32 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:34 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:34 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:35 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:35 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:36 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:36 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:37 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:43:37 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:30 INFO  EmployeeController:19 - Handler getAllEmployee is initialized
+2021-12-23 08:47:31 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:31 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:32 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:32 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:33 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:33 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:46 WARN  MainDriver:34 - LOG: Warning
+2021-12-23 08:47:46 ERROR MainDriver:35 - LOG: ERROR
+2021-12-23 08:47:46 FATAL MainDriver:36 - LOG: Fatal
+2021-12-23 08:47:46 INFO  MainDriver:37 - --------------
+2021-12-23 08:47:47 INFO  MainDriver:40 - Start: http://localhost:8081/
+2021-12-23 08:47:54 INFO  LoginController:17 - Handler login is initialized.
+2021-12-23 08:47:56 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:57 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:57 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:47:58 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:48:01 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:48:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:48:02 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.
+2021-12-23 08:48:03 INFO  ReimbursementController:22 - Handler getAllReimbursement is initialized.

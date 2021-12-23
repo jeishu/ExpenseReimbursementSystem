@@ -55,7 +55,8 @@ public class MainDriver {
 		//app.post("/employee", EmployeeController.addEmployee); get back to this
 		app.get("/reimbursement", ReimbursementController.getAllReimbursement);
 		app.post("/reimbursement", ReimbursementController.submitNewReimbursement);
-
+		
+		app.post("/approval", ReimbursementController.reimbursementApproval);
 		
 	}
 	
