@@ -41,8 +41,20 @@ public class EmployeeController {
 	};
 	
 	//updating employeeinfo
-//	public static Handler updateEmployeeProfile = ctx -> {
-//		EmployeeDao employeeDao = new EmployeeDao();
-//		int userId = ctx.cookieStore("userId");
-//	};
+	public static Handler updateEmployeeProfile = ctx -> {
+		EmployeeDao employeeDao = new EmployeeDao();
+		Employee employee = new Employee();
+		
+		employee.setUserId(ctx.cookieStore("userId"));
+		employee.setUserRole(ctx.cookieStore("userRole"));
+		employee.setEmail(ctx.formParam("p-email"));
+		employee.setFirstName(ctx.formParam("p-first-name"));
+		employee.setLastName(ctx.formParam("p-last-name"));
+		employee.setPassword(ctx.formParam("p-password"));
+		employee.setUserName(ctx.formParam("p-username"));
+		
+		employeeDao.updateEmployeeInfo(employee);
+		
+		ctx.redirect("../../html/employee/employeeHome.html");
+	};
 }

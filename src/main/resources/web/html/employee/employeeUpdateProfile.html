@@ -24,11 +24,25 @@
             </nav>
             <div class="vertical-line"></div>
             <main class="service-dashboard">
-                <p class="service-header">SERVICE DASHBOARD</p>
+                <p class="service-header">EMPLOYEE DASHBOARD</p>
+                <p id="profile-header">Update Profile Information</p>
+                <form id="update-profile" action="/update" method="post">
+                    <label for="p-first-name">First name:</label>
+                    <input type="text" id="p-first-name" name="p-first-name" required>
+                    <label for="p-last-name">Last name:</label>
+                    <input type="text" id="p-last-name" name="p-last-name" required>
+                    <label for="p-email">Email:</label>
+                    <input type="text" id="p-email" name="p-email" required>
+                    <label for="p-username">Username:</label>
+                    <input type="text" id="p-username" name="p-username" required>
+                    <label for="p-password">Password:</label>
+                    <input type="text" id="p-password" name="p-password" required>
+                    <input id="profile-update-btn" type="submit" value="Submit">
+                  </form>
             </main>
         </div>
     </div>
     
-    <script src=""></script>
+    <script src="../../assets/js/viewProfile.js"></script>
 </body>
 </html>

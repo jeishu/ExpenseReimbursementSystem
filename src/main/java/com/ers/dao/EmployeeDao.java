@@ -8,9 +8,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.ers.model.Employee;
 import com.ers.util.ConnectionUtils;
+import com.ers.util.HibernateUtil;
 
 public class EmployeeDao {
 	Logger logger = Logger.getLogger(EmployeeDao.class);
@@ -100,6 +103,26 @@ public class EmployeeDao {
 		return null;
 	}
 	
+	public boolean updateEmployeeInfo(Employee employee) {
+		try(Session session = HibernateUtil.getSessionFactory().openSession()){
+			Transaction transaction = session.beginTransaction();
+			
+			Employee employeeUpdated = session.load(Employee.class, employee.getUserId());
+			employeeUpdated.setUserId(employee.getUserId());
+			employeeUpdated.setUserRole(employee.getUserRole());
+			employeeUpdated.setEmail(employee.getEmail());
+			employeeUpdated.setFirstName(employee.getFirstName());
+			employeeUpdated.setLastName(employee.getLastName());
+			employeeUpdated.setPassword(employee.getPassword());
+			employeeUpdated.setUserName(employee.getUsername());
+			
+			session.update(employeeUpdated);
+			transaction.commit();
+			session.close();
+		}
+		return false;
+	}
+	// NEED TO GET THIS TO WORK	
 	public boolean addEmployee(Employee employee) {
 		try(Connection connection = ConnectionUtils.getConnection()){
 			String sql = "INSERT INTO employee WHERE VALUES(?,?,?,?,?,?,?)";
