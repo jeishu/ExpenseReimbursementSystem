@@ -34,7 +34,7 @@ public class ReimbursementController  {
 		
 		ReimbursementDao reimbursementDao = new ReimbursementDao();
 		
-		DateFormat df = new SimpleDateFormat("yyy/MM/dd HH:mm");
+		DateFormat df = new SimpleDateFormat("yyy/MM/dd");
 		Date date = new Date();
 		
 		String reimbursementType = ctx.formParam("reim-type");
@@ -43,9 +43,10 @@ public class ReimbursementController  {
 		int amount = Integer.parseInt(ctx.formParam("amount"));
 		
 		Random random = new Random();
-		int randomId = random.nextInt(999);
+		Integer randomId = random.nextInt(999);
+		System.out.println(randomId);
 		
-		reimbursement.setReimbursementId(randomId);
+//		reimbursement.setReimbursementId(randomId);
 		reimbursement.setAccepted(false);
 		reimbursement.setAmount(amount);
 		reimbursement.setDescription(description);
@@ -55,9 +56,13 @@ public class ReimbursementController  {
 		reimbursement.setSubmitTime(df.format(date));
 		reimbursement.setAuthorId(id);
 		
-		reimbursementDao.insertReimbursements(reimbursement);
+		reimbursementDao.submitReimbursements(reimbursement);
 		ctx.redirect("../../html/employee/employeeHome.html");
 		
 	};
-
+//	public static void main(String[] args) {
+//		Random random = new Random();
+//		int randomId = random.nextInt(999);
+//		System.out.println(randomId);
+//	}
 }

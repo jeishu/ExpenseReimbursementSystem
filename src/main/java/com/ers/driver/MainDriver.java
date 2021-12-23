@@ -52,9 +52,10 @@ public class MainDriver {
 		
 		app.post("/update", EmployeeController.updateEmployeeProfile);
 		
-		//app.post("/submit", ReimbursementController.submitNewReimbursement);
 		//app.post("/employee", EmployeeController.addEmployee); get back to this
 		app.get("/reimbursement", ReimbursementController.getAllReimbursement);
+		app.post("/reimbursement", ReimbursementController.submitNewReimbursement);
+
 		
 	}
 	

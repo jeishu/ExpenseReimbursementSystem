@@ -65,11 +65,11 @@ public class ReimbursementDao {
 		return null;
 	}
 	
-	public boolean insertReimbursements(Reimbursement reimbursement) {
+	public boolean submitReimbursements(Reimbursement reimbursement) {
 		try(Session session = HibernateUtil.getSessionFactory().openSession()) {
 			
 			session.beginTransaction();
-			reimbursement.setReimbursementId(reimbursement.getReimbursementId());
+//			reimbursement.setReimbursementId(reimbursement.getReimbursementId());
 			reimbursement.setAccepted(reimbursement.isAccepted());
 			reimbursement.setAmount(reimbursement.getAmount());
 			reimbursement.setDescription(reimbursement.getDescription());
@@ -81,6 +81,6 @@ public class ReimbursementDao {
 			session.save(reimbursement);
 			session.getTransaction().commit();
 		}
-		return false;
+		return true;
 	}
 }

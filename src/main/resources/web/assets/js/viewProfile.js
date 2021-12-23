@@ -1,5 +1,4 @@
 var apiURL = "http://localhost:8081/login/login";
-var updateURL = "http://localhost:8081/update"
 
 //Rendering HTML code for profile
 fetch(apiURL)
