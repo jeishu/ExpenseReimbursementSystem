@@ -8,10 +8,32 @@ The Expense Reimbursement System will manage the process of reimbursing employee
 
 ## Table of Contents
 
+* [Future Developement](#Future-Development)
 * [Technology](#Technology)
 * [Contributors](#Contributors)
 * [Questions](#Questions)
 * [License](#License)
+
+## Future-Development
+
+* Need to fix approval and denial of reimbursement tickets
+* Fully finishing implementing Hibernate over JDBC
+* Finish up implementing Log4j
+* Implement Junit Testing
+* Add new employee
+* View Reimbursements by employee
+* Redirecting when entering wrong password
+* Refreshing data as data gets input into the database
+* Combining Login Page into one for less HTML pages
+* Restructuring/reorganizing code
+* Clean up Frontend styling
+    * Include a Home button for both users
+    * Have an appropriate home page dashboard for both Manager and Employee
+    * Have a dark mode implementation
+    * Mobile Design over Desktop
+    * Have less blank areas and more coverage in those areas
+    * (Maybe) React to take over the HTML, JS Frontend
+* Deployment
 
 ## Technology
 

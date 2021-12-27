@@ -74,7 +74,7 @@ resolvedTable = (response) => {
 
 //Approval of Reimbursement Tickets
 approvalTable = (response) => {
-    //let approvalTable = document.getElementById("approval-form");
+    let approvalTable = document.getElementById("approval-form");
     let approvalOptions = document.getElementById("reimId");
     response.forEach( row => {
         let option = document.createElement("option");

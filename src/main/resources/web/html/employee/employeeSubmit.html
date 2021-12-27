@@ -30,16 +30,16 @@
                     <!-- <label for="author_id" name="author_id">User ID</label>
                     <input id="author_id" name="author_id" type="text"/> -->
                     <p>Type of Ticket</p>
-                    <select name="reim-type" id="reim-type">
+                    <select name="reim-type" id="reim-type" required>
                         <option class="options" value=""></option>
                         <option class="options" value="food">Food</option>
                         <option class="options" value="travel">Travel</option>
                         <option class="options" value="utility">Utility</option>
                     </select>
                     <label for="description" name="description">Description of Expenses</label>
-                    <textarea type="text" name="description" id="description"></textarea>
+                    <textarea type="text" name="description" id="description" required></textarea>
                     <label for="amount" name="amount">Amount</label>
-                    <input type="number" name="amount" id="amount">
+                    <input type="number" name="amount" id="amount" required>
                     <input type="submit" id="submit-ticket">
                 </form>
             </main>

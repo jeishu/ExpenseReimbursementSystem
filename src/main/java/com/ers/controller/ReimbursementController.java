@@ -28,6 +28,8 @@ public class ReimbursementController  {
 	
 	//submit new tickets
 	public static Handler submitNewReimbursement = ctx -> {
+		logger.info("Submitting new reimbursement ticket.");
+
 		int id = ctx.cookieStore("userId");
 		
 		Reimbursement reimbursement = new Reimbursement();
@@ -60,28 +62,33 @@ public class ReimbursementController  {
 	public static Handler reimbursementApproval = ctx -> {
 		logger.info("New reimbursement ticket waiting for approval.");
 
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		Date date = new Date();
 		int id = ctx.cookieStore("userId");
+
 		Reimbursement reimbursement = new Reimbursement();
 		ReimbursementDao reimbursementDao = new ReimbursementDao();
+		
+		DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+		Date date = new Date();
+		
 		String reimbursementId = ctx.formParam("reimId");
-		String resolvedTime = dateFormat.format(date);
-		String reimbursementOption = ctx.formParam("reim-option");
+		
+		String reimbursementOption = ctx.formParam("reim-options");
+		
 		boolean accepted;
 		if (reimbursementOption.equals("true")) {
-			accepted = true;
 			logger.info("Reimbursement approved");
+			accepted = true;
 		} else {
 			logger.info("Reimbursement denied");
 			accepted = false;
 		}
 		reimbursement.setResolvedId(id);
 		reimbursement.setReimbursementId(Integer.parseInt(reimbursementId));
-		reimbursement.setResolveTime(resolvedTime);
+		reimbursement.setResolveTime(df.format(date));
 		reimbursement.setAccepted(accepted);
+		
 		reimbursementDao.updateReimbursements(reimbursement);
 		
-		ctx.redirect("/managerResolved.html");
+		ctx.redirect("../../html/manager/managerResolved.html");
 	};
 }
