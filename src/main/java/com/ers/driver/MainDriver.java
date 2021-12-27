@@ -56,9 +56,6 @@ public class MainDriver {
 		app.get("/reimbursement", ReimbursementController.getAllReimbursement);
 		app.post("/reimbursement", ReimbursementController.submitNewReimbursement);
 		
-		app.post("/reimbursement/approval", ReimbursementController.reimbursementApproval);
-		
+		app.post("/reimbursement/approval", ReimbursementController.reimbursementApproval);	
 	}
-	
-
 }

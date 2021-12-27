@@ -96,7 +96,7 @@ public class ReimbursementDao {
 			updatedReimbursement.setAccepted(reimbursement.isAccepted());
 			updatedReimbursement.setResolveTime(reimbursement.getResolveTime());
 			updatedReimbursement.setResolved(true);
-			updatedReimbursement.setResolvedId(reimbursement.getReimbursementId());
+			updatedReimbursement.setResolvedId(reimbursement.getAuthorId());
 			
 			session.update(updatedReimbursement);
 			

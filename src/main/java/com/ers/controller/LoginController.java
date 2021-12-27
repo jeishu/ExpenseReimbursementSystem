@@ -30,13 +30,15 @@ public class LoginController {
 			ctx.cookieStore("user", employee);
 			ctx.cookieStore("userRole", employee.getUserRole());
 			ctx.cookieStore("userId", employee.getUserId());
+			
+			if(employee.getUserRole().equals("employee")) {
+				ctx.redirect("../../html/employee/employeeHome.html");
+			}
+			if(employee.getUserRole().equals("manager")) {
+				ctx.redirect("../../html/manager/managerHome.html");
+			}
 		}
-		if(employee.getUserRole().equals("employee")) {
-			ctx.redirect("../../html/employee/employeeHome.html");
-		}
-		if(employee.getUserRole().equals("manager")) {
-			ctx.redirect("../../html/manager/managerHome.html");
-		}
+		
 //		ctx.json(employee);
 	};
 }
